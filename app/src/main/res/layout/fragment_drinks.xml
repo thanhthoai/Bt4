@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrinksFragment"
+    android:background="#F1EEF6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@drawable/a4"
+                />
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:src="@drawable/a5"
+                />
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:src="@drawable/a6"
+                />
+        </LinearLayout>
+</FrameLayout>

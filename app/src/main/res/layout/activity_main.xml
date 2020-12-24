@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffff"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="#FF0033">
+
+                <EditText
+                    android:padding="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:hint="Sendo"
+                    android:textColorHint="#212121"
+                    android:layout_margin="3dp"
+                    android:textSize="15dp"
+                    android:drawableRight="@drawable/ic_camera"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:textStyle="italic"
+                    android:background="@drawable/botron" />
+
+                <ImageButton
+                    android:id="@+id/button6"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/a10" />
+                <ImageButton
+                    android:id="@+id/button7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_ic" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/a12"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:tabSelectedTextColor="#FF0000" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp">
+
+                </androidx.viewpager.widget.ViewPager>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_category"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="-10dp"
+                android:background="#FF0033">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deal sốc trong ngày"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:background="#669933">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/w2"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w5"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w7"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/w12" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w13"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w14"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w15"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w16"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w17"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/w17"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
